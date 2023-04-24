@@ -9,3 +9,23 @@ client.on("ready", () => {
 ///
 client.login(process.env.token)
 
+const prefix = "#"
+
+client.on("message",message => {
+  if(message.content === prefix + 'ping')
+  message.channel.send(new Discord.MessageEmbed()
+  .setDescription("**please wait**")
+  )
+      message.edit(new Discord.MessageEmbed()
+  .setDescription("**please wait**"))
+       message.edit(new Discord.MessageEmbed()
+  .setDescription("**please wait**"))
+        message.edit(new Discord.MessageEmbed()
+  .setDescription("**please wait**"))
+         message.edit(new Discord.MessageEmbed()
+         .setTitle("**PONG**")
+         .setDescription(`**MY PING IS,\`\`\`[${client.ws.ping}]\`\`\`**`) 
+         .setColor("RANDOM")
+         )
+ 
+})
