@@ -9,7 +9,7 @@ client.on("ready", () => {
 ///
 client.login(process.env.token)
 
-const prefix = "#"
+const prefix = "$"
 
 client.on("message",message => {
   if(message.content === prefix + 'ping')
